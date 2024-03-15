@@ -50,10 +50,10 @@ jobs:
 
     run-test:
         runs-on: ubuntu-latest
-          container:
-              image: epitechcontent/epitech-docker:latest
-          needs: [compile, coding-style]
-          steps:
+        container:
+            image: epitechcontent/epitech-docker:latest
+        needs: [compile, coding-style]
+        steps:
 
             - name: Checkout GH repo
               uses: actions/checkout@v4
