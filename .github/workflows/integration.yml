@@ -63,5 +63,5 @@ jobs:
 
             - name: Run unit tests
               run: ./unit_testing
-            - name: Make integration testing
+            - name: Run integration tests
               run: ./integration_testing
