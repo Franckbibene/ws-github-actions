@@ -16,10 +16,10 @@ jobs:
           - name: Checkout GH repo
             uses: actions/checkout@v4
 
-          -name: Run coding-style.sh
+          - name: Run coding-style.sh
             run: check.sh $(pwd) $(pwd)
 
-          -name: Report banana result
+          - name: Report banana result
             run: |
               NB_ERROR=$(cat coding-style-reports.log | wc -l)
               if [ $NB_ERROR -gt 0]; then
